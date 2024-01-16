@@ -1,0 +1,191 @@
+
+  body {
+     font-family: 'Finger Paint', sans-serif;
+     background: linear-gradient(to right, #9C27B0, #03A9F4);
+}
+  .siema{
+     display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+    padding-left: 300px;
+    font-size: 50px;
+    gap:40px;
+  }
+  .hello {
+    font-size: 1em;
+    position: relative;
+    animation: neon-glow 1.2s ease-in-out infinite alternate;
+  }
+
+  @keyframes neon-glow {
+    to {
+      text-shadow:
+        0 0 10px rgb(127, 81, 255),
+        0 0 20px #0800ff,
+        0 0 30px #fff;
+    }
+  }
+  
+  .slider {
+    font-size: 1em;
+    position: relative;
+    animation: neon-glow 1.2s ease-in-out infinite alternate;
+  }
+
+  @keyframes neon-glow {
+    to {
+      text-shadow:
+        0 0 10px rgb(127, 81, 255),
+        0 0 20px #0800ff,
+        0 0 30px #fff;
+    }
+  }
+  .logoIT > img {
+    mix-blend-mode:color-burn;
+  }
+  .logoIT{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 350px;
+  padding-bottom: 100px;
+  }
+  .contain{
+    display: flex;
+    justify-content: space-between;
+  }
+  .contain-double{
+    display: flex;
+  }
+
+  .button-container  {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 130px;
+  }
+  .icons {
+    font-size: -100px;
+    width: 100px;
+    height: 100px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &.person {
+      -webkit-box-shadow: 0px 0px 20px 5px rgba(0, 111, 255, 0.53);
+      -moz-box-shadow:0px 0px 20px 5px rgba(0, 111, 255, 0.53);
+      box-shadow: 0px 0px 20px 5px rgba(0, 111, 255, 0.53);
+      width: 100px;
+      height: 100px;
+    }
+
+    &.insta {
+      -webkit-box-shadow: 0px 0px 20px 5px rgba(16, 35, 243, 0.5);
+      -moz-box-shadow: 0px 0px 20px 5px rgba(255, 0, 119, 0.5);
+      box-shadow: 0px 0px 20px 5px rgba(232, 5, 137, 0.5);
+      
+    }
+    &.git {
+      -webkit-box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.5);
+      -moz-box-shadow: 0px 0px 20px 5px rgba(255, 255, 255, 0.5);
+      box-shadow: 0px 0px 20px 5px rgba(120, 119, 119, 0.5);
+      padding-bottom: 3.5px;
+    }
+    &.fb {
+      -webkit-box-shadow: 0px 0px 20px 5px rgba(43, 0, 255, 0.53);
+      -moz-box-shadow: 0px 0px 20px 5px rgba(34, 9, 254, 0.53);
+      box-shadow: 0px 0px 20px 5px rgba(20, 4, 245, 0.53);
+    }
+    &:hover {
+      transform: translateY(-10px);
+      transition: all 0.3s;
+    }
+  }
+  .slideshow-container {
+    padding-left: 80px;
+    padding-top: 80px;
+    position: relative;
+  }
+  .prev, .next {
+    cursor: pointer;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+  }
+  .direction{
+    display: flex;
+    justify-content:space-between;
+
+  }
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    cursor: pointer;
+  }
+  .dots{
+    display: flex;
+    justify-content:space-between;
+    padding: 80px;
+    padding-top: 20px;
+  }
+  .dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  @keyframes fade {
+    from {opacity:4}
+    to {opacity: 1}
+  }
+     
+     @keyframes glitch {
+    0% {
+    text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #1100ff,
+      0.025em 0.04em 0 #a600ff;
+    }
+    15% {
+      text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #3700ff,
+        0.025em 0.04em 0 #9c09bd;
+    }
+    16% {
+      text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #0800ff,
+        -0.05em -0.05em 0 #9900ff;
+    }
+    49% {
+      text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #6d076e,
+        -0.05em -0.05em 0 #3300ff;
+    }
+    50% {
+      text-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #5c075e,
+        0 -0.04em 0 #4400ff;
+    }
+    99% {
+      text-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #5e055f,
+        0 -0.04em 0 #4400ff;
+    }
+    100% {
+      text-shadow: -0.05em 0 0 #00fffc, -0.025em -0.04em 0 #500751,
+        -0.04em -0.025em 0 #5500ff;
+    }
+  }
